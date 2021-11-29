@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Navbar Template · Bootstrap v5.1</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link href="../mahlerportfolio/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+                box-sizing:border-box;
+            }
+        body {
+            margin:0;
+            padding:0;
+        }
+        img {
+            max-width: 80%;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #5988b2;
+            font-family: helvetica, sans-serif;
+            padding: 5px;
+            border: #5988b2;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .begin {
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            font-family: helvetica, sans-serif;
+            padding: 20px;
+        }
+        .banner {
+            display: grid;
+            grid-template-columns:1fr;
+            text-align: center;
+            font-size: 36px;
+            color: white;
+            background-color: #5988b2;
+            font-family: helvetica, sans-serif;
+            padding: 5px;
+        }
+        .panel2 {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+        }
+        .panel2-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .panel2-box2 {
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+        }
+        .panel2-para {
+            color: #5988b2;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .panel3 {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+        }
+        .panel3-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .img-bro {
+            align-content: center;
+        }
+        .panel3-box2 {
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+        }
+        .panel4 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+            
+        }
+        .panel4-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .panel4-box2 {
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+        }
+        .panel5 {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+        }
+        .panel5-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .panel5-box2 {
+            grid-column: 2/3;
+            text-align: center;
+            padding: 20px;
+        }
+        .panel6 {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+        }
+        .panel6-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .panel6-box2 {
+            grid-column: 2/3;
+            padding: 20px;
+        }
+        .panel-text {
+            padding: 20px;
+            text-align: left;
+            color:#5988b2;
+            font-size: 16px;
+            font-family: helvetica, sans-serif;
+            padding: 20px;
+        }
+        .link-panel6 {
+            justify-content: center;
+            padding: 10px;
+        }
+        a.link-panel6:link {
+            color: white;
+            text-decoration:none;
+            padding: 10px;
+            background-color: #5988b2;
+        }
+        a.link-panel6:visited {
+            color:white;
+            text-decoration:none;
+            padding: 10px;
+            background-color: #5988b2;
+        }
+        a.link-panel6:hover {
+            color:#5988b2;
+            text-decoration:none;
+            background-color: black;
+        }
+        a.link-panel6:active {
+            color:#eee;
+            text-decoration:none;
+        }
+        a.link-panel6:link {
+            font-size:25px;
+        }
+        .panel7 {
+            display: grid;
+            grid-template-columns:1fr 1fr;
+            text-align: center;
+        }
+        .panel7-box1 {
+            grid-column: 1/2;
+            padding: 30px;
+            padding-top: 20px;
+        }
+        .panel7-box2 {
+            grid-column: 2/3;
+            padding: 20px;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(230px, auto);
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+        .footer-left {
+            text-align: left;
+            padding: 10px;
+        }
+        .footer-right {
+            text-align: right;
+            padding: 10px;
+        }
+        .footer-icons {
+            margin-top: 10px;
+        }
+        .footer-icons a {
+                cursor: pointer;
+                color: white;
+                font-size:30px;
+                text-shadow:2px 2px 3px #5988b2;
+                text-align: center;
+                line-height: 35px;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    @media only screen and (min-width:1000px) {
+        .panel2-box1 {
+            grid-column: 1/2;
+        }
+        .panel2-box2 {
+            grid-column: 2/3;
+        }
+        .panel3-box1 {
+            grid-column: 1/2;
+        }
+        .panel3-box2 {
+            grid-column: 2/3;
+        }
+        .panel4-box1 {
+            grid-column: 1/2;
+        }
+        .panel4-box2 {
+            grid-column: 2/3;
+        }
+        
+    }
+@media only screen and (max-width:1000px) {
+    .panel2-box1 {
+        grid-column: 1/2;
+        align-content: center;
+    }
+    .panel2-box2 {
+        grid-column: 2/3;
+    }
+    .panel3-box1 {
+        grid-column: 1/2;
+        align-content: center;
+    }
+    .panel3-box2 {
+        grid-column: 2/3;
+    }
+    .panel4-box1 {
+        grid-column: 1/2;
+        align-content: center;
+    }
+    .panel4-box2 {
+        grid-column: 2/3;
+    }
+}
+@media only screen and (max-width:800px) {
+    .panel2-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel2-box2 {
+        grid-column: 1/3;
+    }
+    .panel3-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel3-box2 {
+        grid-column: 1/3;
+    }
+    .panel4-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel4-box2 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel5-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel5-box2 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel6-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel6-box2 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel7-box1 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+    .panel7-box2 {
+        grid-column: 1/3;
+        align-content: center;
+    }
+        }
+    
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<main>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="mahlerweblogo.svg" height="90" width="90" alt="main logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="web.html">Designed Websites</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">OpenProcessing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user.html">User Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="gallary.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="adobe.html">Adobe Projects</a>
+            </li>
+        </ul>
+        <form>
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+</main>
+<br>
+<div class="panel1">
+    <h1><b>OpenProcessing</b></h1>
+        <p class="begin">OpenProcessing is website users can use to create sketches in programing language. Instead of supporting all the programming languages, OpenProcessing focuses on Javascript and p5js. On this page, I have added all of the sketches I have created using OpenProcessing.</p>
+</div>
+<div class="banner">
+    <h2><b>Sketch 1 - Hello World!</b></h2>
+</div>
+<div class="panel2">
+    <div class="panel2-box1">
+        <iframe src="https://openprocessing.org/sketch/1361330/embed/?plusEmbedHash=MmI2MzRkYzI5NzIwZDYxOWExM2JjZmMxZGYzZDIxZGU0ZjcwMDUyYWMzNTBiNzgyMGUxMTIwMGRkODFmMzcyNDUwNDczZTdiYTJiMTUwZDY2ZjBjODRkMjgxZDY2MjA4ZTA1Mjc2YWI0ZDQ0YmUyNzJhYTc1NTk0NTg5NmIwODVqTzlQeDBvN1BwNXpXbW9jY0VaVGtXWEExR2FSdm5aQ0ZsZDNLR3o1YitURzFJZlQzRmUvL2E3R2RnVjhZQ2N1STArT085bTh0YWEvVDdCTEJLakEzdz09&plusEmbedTitle=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel2-box2">
+        <h2><a class="link-panel6" href="https://openprocessing.org/sketch/1361330/embed/?plusEmbedHash=MmI2MzRkYzI5NzIwZDYxOWExM2JjZmMxZGYzZDIxZGU0ZjcwMDUyYWMzNTBiNzgyMGUxMTIwMGRkODFmMzcyNDUwNDczZTdiYTJiMTUwZDY2ZjBjODRkMjgxZDY2MjA4ZTA1Mjc2YWI0ZDQ0YmUyNzJhYTc1NTk0NTg5NmIwODVqTzlQeDBvN1BwNXpXbW9jY0VaVGtXWEExR2FSdm5aQ0ZsZDNLR3o1YitURzFJZlQzRmUvL2E3R2RnVjhZQ2N1STArT085bTh0YWEvVDdCTEJLakEzdz09&plusEmbedTitle=true">Hello World! Sketch</a></h2>
+        <p class="panel-text">This sketch was created in my SMAD 308: Interactive Design 2 class. We were tasked to introduce ourselves through code. I choose to draw a penguin because it is one of my favorite animals, and had elements I knew how to code without any previous instruction.</p>
+    </div>
+</div>
+<div class="banner">
+    <h2><b>Sketch 2 - Abstract Art</b></h2>
+</div>
+<div class="panel3">
+    <div class="panel3-box1">
+        <iframe src="https://openprocessing.org/sketch/1361331/embed/?plusEmbedHash=ZGU5M2M2YjU3MjRmZmJhZmUyNjlkODMzZTgxZTI1YzUxOTA0MThjMDY3NmIxNGEwNzU4MWRmMDk1YTUwNGZhNjQwODg3MjJlYzQyMzM1NDA3ZDA3N2EyZThiZWNhZDlkMTNmMzVkMDllYjVkYmViOTZmNDRiNTU4NjUxOTdjNGIzc0ExV0wvN1FvckowL3NZV1BvUU92b3pTZTJidHFQSmpzWWlqZE1UTk1ySG1lR2pNSXM0K2tlejRkcXBBeWVvNEo5cS9SYUlNZjBqMzN5VDAremV3dz09&plusEmbedTitle=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel3-box2">
+        <h2><a class="link-panel6" href="https://openprocessing.org/sketch/1361331/embed/?plusEmbedHash=ZGU5M2M2YjU3MjRmZmJhZmUyNjlkODMzZTgxZTI1YzUxOTA0MThjMDY3NmIxNGEwNzU4MWRmMDk1YTUwNGZhNjQwODg3MjJlYzQyMzM1NDA3ZDA3N2EyZThiZWNhZDlkMTNmMzVkMDllYjVkYmViOTZmNDRiNTU4NjUxOTdjNGIzc0ExV0wvN1FvckowL3NZV1BvUU92b3pTZTJidHFQSmpzWWlqZE1UTk1ySG1lR2pNSXM0K2tlejRkcXBBeWVvNEo5cS9SYUlNZjBqMzN5VDAremV3dz09&plusEmbedTitle=true">Abstract Art Sketch</a></h2>
+        <p class="panel-text">This sketch was created in my SMAD 308: Interactive Design 2 class. We were asked to generate a visual reinterpretation of one of Mondrian's works of art using lines, shapes, and colors. Mondrian is known for being the pioneer of 20th-century abstract art, which uses simple geometric shapes.</p>
+    </div>
+</div>
+<div class="banner">
+    <h2><b>Sketch 3 - Animation</b></h2>
+</div>
+<div class="panel4">
+    <div class="panel4-box1">
+        <iframe src="https://openprocessing.org/sketch/1361343/embed/?plusEmbedHash=ZDQxM2U3OTg4Yjg1NThiOWFiN2QxMjE3Njk0MDkwYTdjMjVlMWEwNzIzODM0ZGMyNGFlMDQ1YjBmNTJmZjI5NWMyOWQ5MmFmNjRiZmNkMDNjYTk1NGQyNTQzZDQ3YzA5ZjA4NTg1NzBjOGM3MGI1ZWNjZDk0MDJlYmEyNzFkOWRhZjQrOXVsU2tWNXl4aFFEWmhnay9lR0EyN1ZZT2lQcXNGSmdWZEcxYm9kcGI4TmllUzErZFNOaDlIMjZGaWRvK1RmMXErcE5uQkVheUd2endvM1NxQT09&plusEmbedTitle=true&plusEmbedFullscreen=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel4-box2">
+        <h2><a class="link-panel6" href="https://openprocessing.org/sketch/1361343/embed/?plusEmbedHash=ZDQxM2U3OTg4Yjg1NThiOWFiN2QxMjE3Njk0MDkwYTdjMjVlMWEwNzIzODM0ZGMyNGFlMDQ1YjBmNTJmZjI5NWMyOWQ5MmFmNjRiZmNkMDNjYTk1NGQyNTQzZDQ3YzA5ZjA4NTg1NzBjOGM3MGI1ZWNjZDk0MDJlYmEyNzFkOWRhZjQrOXVsU2tWNXl4aFFEWmhnay9lR0EyN1ZZT2lQcXNGSmdWZEcxYm9kcGI4TmllUzErZFNOaDlIMjZGaWRvK1RmMXErcE5uQkVheUd2endvM1NxQT09&plusEmbedTitle=true&plusEmbedFullscreen=true">Animation Sketch</a></h2>
+        <p class="panel-text">This sketch was created in my SMAD 308: Interactive Design 2 class. We were tasked to create a sketch that includes an animation that responds to the user's mouse in some way. I chose to create a camera that flashes when you press down on the mouse. I chose this design because Photography is one of my passions and I wanted to display that passion in code.</p>
+    </div>
+</div>
+<div class="banner">
+    <h2><b>Sketch 4 - Portrait</b></h2>
+</div>
+<div class="panel5">
+    <div class="panel5-box1">
+        <iframe src="https://openprocessing.org/sketch/1361345/embed/?plusEmbedHash=ZGIzZjc2MDllMWJiNDc3ZTcxYjM4YjY0MzhhYjc0YmFlY2YwNTVlMjJjOGQ3NGY2NWZmZWRkODI4MjQ3ODI5MGI3ODk4NDY0OTA5NWY2OTFkNTExMjZhZGFlZWYyNzA4NDUxYTRlYjE3YWQ0OTBmMTM0ZjRlOWE1NDM3NDcyZjl0SFZtL3VIUjZsYmQydTRMemVsZUIzVGxiQW5HOFMvcDhkNzBNYzN5UjZrQy9RSlYwN0NpUXNuYlQ1NDRKMFFUV0wvMWxEOXVucldLVWpLbURYVUV0QT09&plusEmbedTitle=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel5-box2">
+        <h2><a class="link-panel6" href="https://openprocessing.org/sketch/1361345/embed/?plusEmbedHash=ZGIzZjc2MDllMWJiNDc3ZTcxYjM4YjY0MzhhYjc0YmFlY2YwNTVlMjJjOGQ3NGY2NWZmZWRkODI4MjQ3ODI5MGI3ODk4NDY0OTA5NWY2OTFkNTExMjZhZGFlZWYyNzA4NDUxYTRlYjE3YWQ0OTBmMTM0ZjRlOWE1NDM3NDcyZjl0SFZtL3VIUjZsYmQydTRMemVsZUIzVGxiQW5HOFMvcDhkNzBNYzN5UjZrQy9RSlYwN0NpUXNuYlQ1NDRKMFFUV0wvMWxEOXVucldLVWpLbURYVUV0QT09&plusEmbedTitle=true">Portrait Sketch</a></h2>
+        <p class="panel-text">This sketch was created in my SMAD 308: Interactive Design 2 class. We were tasked to design a portrait of our choosing. You could create a portrait of yourself, a friend, your dog, a celebrity, a cartoon character, etc. I decided to create one of my favorite cartoon characters, Perry The Platypus from Phineas and Ferb.</p>
+    </div>
+</div>
+<div class="banner">
+    <h2><b>Sketch 5 - Visualizing Time</b></h2>
+</div>
+<div class="panel6">
+    <div class="panel6-box1">
+        <iframe src="https://openprocessing.org/sketch/1361270/embed/?plusEmbedHash=NDE3MWM0MDg5NjNiYmUzZDEzNDc1ZmI1NzdiNTY5MjEwOTdkZWE1NDZmNDM0OTQ2NjI1MmRkOTBmODljNGE5NzgxNmE3OTg2YTg0NWRmODQzMTA5NWRmZmM5MmFjN2U2NmEzZDIyYjJhYjlhMmY5ZTQwNDdlOGFiODA2MDNjYWNLcXpDRHRVUzRaV2hiOXgrVXJXTjA2ZDQrTitkSE0yZE5MNG1hWk5KbENCNjJ1K25HRDVRRGxVRU9FOGpaMDNRUmVHekt2Y002N2xDMXZnQzg4MDZFQT09&plusEmbedTitle=true&plusEmbedFullscreen=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel6-box2">
+        <h2><a class="link-panel6" href="files/user/bunkmates-final.xd">Visualizing Time Sketch</a></h2>
+        <p class="panel-text">This sketch was created in my SMAD 308: Interactive Design 2 class. We were tasked to create a sketch that uniquely visualizes time. As well as use, hour(), minute(), and second() functions. I decided to create the phrase "Always moving", but have the "o" represent a clock and the background change color with the time.</p>
+    </div>
+</div>
+<div class="banner">
+    <h2><b>Sketch 6 - Data Visualization</b></h2>
+</div>
+<div class="panel7">
+    <div class="panel7-box1">
+        <iframe src="https://openprocessing.org/sketch/1361352/embed/?plusEmbedHash=ZjY4ZDk0OTNjNTljMjY2ZjJjNzBmZTQzYTUyMzA0MDc5NmNjMGFiYmE1YWM2OTNlMjMzYzRhY2I1OWM4MWYyODBjNjA0MjVmNTQxMmFhZDBhY2ZmZGVmNzc2ZDVmY2I2NTc0MjYyMjgyMzRlZmEwMTYyMzVjMzQ3MDg4ODNmNGFKTUJ2eXVldGRkYXNNNnVzbXJ2dXNyMGtiNVdtNy9Hc1ZVUkUzMk85QXUrRzllL3VHSDNESWdyTTJaOElyQ1Zta1NJZjB5UEk5Vk5HbzhWYlNlMm1ydz09&plusEmbedTitle=true" width="400" height="400"></iframe>
+    </div>
+    <div class="panel7-box2">
+        <h2><a class="link-panel6" href="https://openprocessing.org/sketch/1361352/embed/?plusEmbedHash=ZjY4ZDk0OTNjNTljMjY2ZjJjNzBmZTQzYTUyMzA0MDc5NmNjMGFiYmE1YWM2OTNlMjMzYzRhY2I1OWM4MWYyODBjNjA0MjVmNTQxMmFhZDBhY2ZmZGVmNzc2ZDVmY2I2NTc0MjYyMjgyMzRlZmEwMTYyMzVjMzQ3MDg4ODNmNGFKTUJ2eXVldGRkYXNNNnVzbXJ2dXNyMGtiNVdtNy9Hc1ZVUkUzMk85QXUrRzllL3VHSDNESWdyTTJaOElyQ1Zta1NJZjB5UEk5Vk5HbzhWYlNlMm1ydz09&plusEmbedTitle=true">Data Visualization Sketch</a></h2>
+        <p class="panel-text">This project was created in my SMAD 308: Interactive Design 2 class. We were tasked to create a sketch that visualizes data that is either loaded from a JSON or CSV file. I chose to make an infographic using a CSV file. The topic was "COVID-19 Vaccinated People in the USA - 2021". Once I gather my stats, I created this infographic based on a region of the US and amount of vaccinated people within that region.</p>
+    </div>
+</div>
+<footer>
+            <div class="footer-left">
+                <h3>Lindsey Mahler</h3>
+                <p>James Madison University</p> 
+                <p>School of Media Arts and Design</p>
+                <p>Concentration - Interactive Design</p> 
+            </div>
+            <div class="footer-right">
+                <p>&copy; Lindsey Mahler</p> 
+                <p>Email: lindsey.mahler@yahoo.com</p>
+                <p>Phone: (973) 440-0256</p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/lindsey.mahler.5"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lindsey_mmahler/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lindsey-mahler/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxF4svjG89U1Z0Iw3em_u_Q"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="../mahlerportfolio/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>

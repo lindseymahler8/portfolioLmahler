@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Navbar Template · Bootstrap v5.1</title>
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+<link href="../mahlerportfolio/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        * {
+                box-sizing:border-box;
+            }
+        body {
+            margin:0;
+            padding:0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 40px;
+            color: #5988b2;
+            font-family: helvetica, sans-serif;
+            padding: 5px;
+            border: #5988b2;
+            border-style: solid;
+            border-width: 5px;
+        }
+        .begin {
+            text-align: center;
+            font-size: 16px;
+            color: black;
+            font-family: helvetica, sans-serif;
+            padding: 30px;
+        }
+        h2 {
+            font-size: 24px;
+            color: white;
+        }
+        .panel2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(330px, auto));
+            justify-content: center;
+            grid-auto-rows: minmax(250px, auto);
+            padding: 10px;
+        }
+        .card {
+            width: 300px;
+            padding: 8px;
+            border: solid 2px black;
+            border-radius: 10px;
+            background-color: rgba(89, 136, 178, 0.9);
+            color: white;
+            font-size: 10px;
+            align-content: center;
+        }
+        footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(230px, auto);
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+        .footer-left {
+            text-align: left;
+            padding: 10px;
+        }
+        .footer-right {
+            text-align: right;
+            padding: 10px;
+        }
+        .footer-icons {
+            margin-top: 10px;
+        }
+        .footer-icons a {
+                cursor: pointer;
+                color: white;
+                font-size:30px;
+                text-shadow:2px 2px 3px #5988b2;
+                text-align: center;
+                line-height: 35px;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    @media only screen and (min-width:1000px) {
+      .panel2 {
+          grid-column: 1/3;
+        }  
+        
+    }
+@media only screen and (max-width:1000px) {
+    
+}
+@media only screen and (max-width:800px) {
+    .panel2 {
+          grid-column: 1/2;
+        }
+        }
+    
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="navbar.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<main>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark" aria-label="Fourth navbar example">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="mahlerweblogo.svg" height="90" width="90" alt="main logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample04">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="web.html">Designed Websites</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="open.html">OpenProcessing</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="user.html">User Research</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="gallary.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="adobe.html">Adobe Projects</a>
+            </li>
+        </ul>
+        <form>
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </div>
+  </nav>
+</main>
+<br>
+<div class="panel1">
+    <h1><b>Gallery</b></h1>
+        <p class="begin">This gallery is a display of my Photography from 2014 - today. Photography has always been a passion of mine. Most of these photos were taken with a Canon Rebel T7 and some were edited using Adobe Photoshop.</p>
+</div>
+<div class="panel2">
+    <div class="card">
+        <img src="files/gallary/p000.jpeg" alt="p0">
+        <h2>Roaring 20s</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p001.jpeg" alt="p1">
+        <h2>Roaring 20s</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p002.jpeg" alt="p2">
+        <h2>Great Depression - Lost</h2>
+    </div>
+
+
+    <div class="card">
+        <img src="files/gallary/p003.JPG" alt="p3">
+        <h2>Great-Depression - in Shambles</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p004.jpeg" alt="p4">
+        <h2>Great Depression - Gone</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p005.JPG" alt="p5">
+        <h2>Welcome to the 60s</h2>
+    </div>
+
+     
+    <div class="card">
+        <img src="files/gallary/p006.JPG" alt="p6">
+        <h2>60s Sip</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p007.jpeg" alt="p7">
+        <h2>60s Sip</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p049.jpg" alt="p49">
+        <h2>80s Rock 'n' Roll</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p009.jpeg" alt="p9">
+        <h2>80s Rebellion</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p010.JPG" alt="p10">
+        <h2>Under the Stars</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p015.jpg" alt="p15">
+        <h2>Time Stops</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p048.jpg" alt="p48">
+        <h2>Today's Fashion</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p044.jpeg" alt="p44">
+        <h2>Today's Fashion</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p047.jpg" alt="p47">
+        <h2>The 2000s</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p016.jpg" alt="p16">
+        <h2>Riding the Waves</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p017.jpg" alt="p17">
+        <h2>Sound of Music</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p018.jpg" alt="p18">
+        <h2>Music is Bright</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p019.jpg" alt="p19">
+        <h2>A Dove</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p020.jpg" alt="p20">
+        <h2>Car Show - Baby Blue</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p021%20.jpg" alt="p21">
+        <h2>Car Show - Baby Pink</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p022%20.jpg" alt="p22">
+        <h2>Good out of Bad</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p024%20.jpg" alt="p24">
+        <h2>Lonely</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p025.jpg" alt="p25">
+        <h2>Moments</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p026.jpg" alt="p26">
+        <h2>Anxiety</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p027%20.jpg" alt="p27">
+        <h2>Shape of You</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p028.jpg" alt="p28">
+        <h2>Focus</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p029.jpg" alt="p29">
+        <h2>Color of the Wind</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p030.jpg" alt="p30">
+        <h2>Lightning in a Bottle</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p031.jpg" alt="p31"> 
+        <h2>Ducks in a Row</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p032.jpg" alt="p32">
+        <h2>Hit the Slopes</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p033.jpg" alt="p33">
+        <h2>Wedding Bells</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p034.jpg" alt="p34">
+        <h2>Ready, Get Set..</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p035.jpeg" alt="p35">
+        <h2>Sleepy Boy</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p036.jpeg" alt="p36">
+        <h2>Splash</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p037.jpg" alt="p37">
+        <h2>Dress to Impress</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p038.jpeg" alt="p38">
+        <h2>Eye Spy</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p039.jpg" alt="p39">
+        <h2>PROM</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p040.jpeg" alt="p40">
+        <h2>COVID Relief</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p041.jpeg" alt="p41">
+        <h2>Day in COVID</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p042.jpeg" alt="p42">
+        <h2>Big City</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p043.jpeg" alt="p43">
+        <h2>Koda Bear</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p012.jpeg" alt="p12">
+        <h2>Opera House</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p013.jpeg" alt="p13">
+        <h2>Well Balanced Breakfast</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p011.jpeg" alt="p11">
+        <h2>Color Collides</h2>
+    </div>
+
+    <div class="card">
+        <img src="files/gallary/p046.JPG" alt="p46">
+        <h2>Graduation Gift</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p008.jpeg" alt="p8">
+        <h2>Aloha</h2>
+    </div>
+    <div class="card">
+        <img src="files/gallary/p050.JPG" alt="p50">
+        <h2>The 60s</h2>
+    </div>
+</div>
+<footer>
+            <div class="footer-left">
+                <h3>Lindsey Mahler</h3>
+                <p>James Madison University</p> 
+                <p>School of Media Arts and Design</p>
+                <p>Concentration - Interactive Design</p> 
+            </div>
+            <div class="footer-right">
+                <p>&copy; Lindsey Mahler</p> 
+                <p>Email: lindsey.mahler@yahoo.com</p>
+                <p>Phone: (973) 440-0256</p>
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com/lindsey.mahler.5"><i class="bi bi-facebook"></i></a>
+                    <a href="https://www.instagram.com/lindsey_mmahler/"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/lindsey-mahler/"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://www.youtube.com/channel/UCxF4svjG89U1Z0Iw3em_u_Q"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="../mahlerportfolio/bootstrap.bundle.min.js"></script>
+
+      
+  </body>
+</html>
